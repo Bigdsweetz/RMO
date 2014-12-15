@@ -30,6 +30,49 @@ ul.inline-list.right a {
 ul.inline-list.right a:hover {
     color: rgba(0, 0, 0, 0.5);
 }
+
+.resize {
+	width: 250px;
+	height: 130px;
+	margin-bottom: 20px;
+
+} 
+
+.tooltip{
+    display: inline;
+    position: relative;
+	left: -18px;
+	width: 250px;
+	height: 130px;
+	margin-bottom: 20px;
+
+} 
+
+.tooltip:hover:before{
+    border: solid;
+    border-color: #333 transparent;
+    border-width: 6x 6px 0 6px;
+    bottom: 20px;
+    content: "";
+    left: 20%;
+    position: absolute;
+    z-index: 99;
+}
+
+.tooltip:hover:after{
+    background: #333;
+    background: rgba(0,0,0,.8);
+    border-radius: 5px;
+    bottom: 26px;
+    color: #fff;
+    content: attr(title);
+    left: 20%;
+    padding: 5px 15px;
+    position: absolute;
+    z-index: 98;
+}
+
+
 h1 {
     color: #fff;
     font-family: "American Typewriter","Courier New",Courier,Monaco,mono;
