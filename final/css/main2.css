@@ -12,6 +12,13 @@ video {
     height: 300px;  
     position: relative;
 }
+
+audio {
+	display: block;
+	margin: 0 auto;
+	width: 300px;  
+    position: relative;
+}
 	 
 hr {
     margin: 0 auto;
